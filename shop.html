@@ -27,6 +27,13 @@
     <ul class="site-nav">
       <li class="catalog">
         <a href="#">Каталог</a>
+          <ul class="sub-menu">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадракоптеры</a></li>
+          </ul>
       </li>
       <li class="delivery">
         <a href="#">Доставка</a>
@@ -37,7 +44,7 @@
       <li class="contacts">
         <a href="#">Контакты</a>
       </li>
-    </ul>
+</ul>
   </nav>
 </header>
 <main class="catalog-page">
@@ -49,12 +56,62 @@
     <li class="breadcrumbs-current">Моноподы для селфи</li>
   </ul>
   <section class="filters">
-    <h2 class="">Фильтр:</h2>
-    <!-- Здесь будет форма -->
-  </section>
-  <section class="sorting">
-    <h2 class="">Сортировка</h2>
-    <!-- Здесь будет форма -->
+    <h2 class="visually-hidden">Фильтры</h2>
+    <form class="filter-form" method="get"
+          action="#">
+      <fieldset>
+        <legend>Цвет</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="black" id="black" checked>
+            <label for="black">
+              Черный
+            </label>
+          <li>
+            <input type="checkbox" name="white" id="white">
+            <label for="white">
+              Белый
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="blue" id="blue" checked>
+            <label for="blue">
+              Синий
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="red" id="red" checked>
+            <label for="red">
+              Красный
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="pink" id="pink">
+            <label for="pink">
+              Розовый
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Bluetooth</legend>
+        <ul>
+          <li>
+            <input type="radio" name="option" value="yes" id="yes" checked>
+            <label for="yes">
+              Есть
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="option" value="no" id="no">
+            <label for="no">
+              Нет
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="filter-form-button" type="submit">Показать</button>
+    </form>
   </section>
   <section class="catalog">
     <h1 class="visually-hidden">Список моноподов</h1>
