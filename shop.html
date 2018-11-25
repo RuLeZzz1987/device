@@ -10,8 +10,10 @@
     <a class="main-header-logo" href="#">
       <img src="img/logo.jpg" width="163" height="36" alt="Логотип «DEVICE»">
     </a>
-    <form>
-
+    <form action="#" method="post">
+      <label class="visually-hidden" for="search">Поиск по сайту</label>
+      <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+      <button class="search-form-submit" type="submit">Найти</button>
     </form>
     <ul class="user-nav">
       <li class="login-link">
@@ -44,69 +46,54 @@
       <li class="contacts">
         <a href="#">Контакты</a>
       </li>
-</ul>
+    </ul>
   </nav>
 </header>
 <main class="catalog-page">
   <h1 class="page-title">Моноподы для селфи</h1>
-
   <ul class="breadcrumbs">
     <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog.html">Каталог товаров</a></li>
+    <li><a href="shop.html">Каталог товаров</a></li>
     <li class="breadcrumbs-current">Моноподы для селфи</li>
   </ul>
   <section class="filters">
     <h2 class="visually-hidden">Фильтры</h2>
-    <form class="filter-form" method="get"
-          action="#">
+    <form class="filter-form" method="get" action="#">
       <fieldset>
         <legend>Цвет</legend>
-        <ul>
+        <ul class="available-colors">
           <li>
             <input type="checkbox" name="black" id="black" checked>
-            <label for="black">
-              Черный
-            </label>
+            <label for="black">Черный</label>
+          </li>
           <li>
             <input type="checkbox" name="white" id="white">
-            <label for="white">
-              Белый
-            </label>
+            <label for="white">Белый</label>
           </li>
           <li>
             <input type="checkbox" name="blue" id="blue" checked>
-            <label for="blue">
-              Синий
-            </label>
+            <label for="blue">Синий</label>
           </li>
           <li>
             <input type="checkbox" name="red" id="red" checked>
-            <label for="red">
-              Красный
-            </label>
+            <label for="red">Красный</label>
           </li>
           <li>
             <input type="checkbox" name="pink" id="pink">
-            <label for="pink">
-              Розовый
-            </label>
+            <label for="pink">Розовый</label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
         <legend>Bluetooth</legend>
-        <ul>
+        <ul class="available-bluetooth">
           <li>
             <input type="radio" name="option" value="yes" id="yes" checked>
-            <label for="yes">
-              Есть
-            </label>
+            <label for="yes">Есть</label>
           </li>
           <li>
             <input type="radio" name="option" value="no" id="no">
-            <label for="no">
-              Нет
-            </label>
+            <label for="no">Нет</label>
           </li>
         </ul>
       </fieldset>
