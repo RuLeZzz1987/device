@@ -10,7 +10,7 @@
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-header-logo" href="#">
-      <img src="img/logo.jpg" width="163" height="36" alt="Логотип «DEVICE»">
+      <img src="img/logo-header.png" width="163" height="36" alt="Логотип «DEVICE»">
     </a>
     <form action="#" method="post">
       <label class="visually-hidden" for="search">Поиск по сайту</label>
@@ -68,8 +68,8 @@
           <li>
           <img src="img/slider-1.jpg" width="384" height="486" alt="Самая длинная палка для селфи">
           <p class="slide-number">01</p>
-          <p>Делай селфи, как Бен Стиллер!</p>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <p class="product-slogan">Делай селфи, как Бен Стиллер!</p>
+          <p class="description-good">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <button class="show-more-information">Подробнее</button>
           <table class="characteristics-goods">
             <tr>
@@ -87,8 +87,8 @@
           <li>
             <img src="img/slider-2.jpg" width="345" height="485" alt="Мотивирующий фитнес-браслет">
             <p class="slide-number">02</p>
-            <p>Худеем правильно!</p>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <p class="product-slogan">Худеем правильно!</p>
+            <p class="description-good">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <button class="show-more-information">Подробнее</button>
             <table class="characteristics-goods">
               <tr>
@@ -102,8 +102,8 @@
           <li>
             <img src="img/slider-3.jpg" width="526" height="334" alt="Необычный квардакоптер">
             <p class="slide-number">03</p>
-            <p>Порхает как бабочка, жалит как пчела!</p>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="product-slogan">Порхает как бабочка, жалит как пчела!</p>
+            <p class="description-good">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <button class="show-more-information">Подробнее</button>
             <table class="characteristics-goods">
               <tr>
@@ -122,12 +122,30 @@
   <section class="popular-goods">
     <h2 class="visually-hidden">Популярные товары</h2>
     <ul class="category-list">
-      <li><a href="#"><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">Виртуальная реальность</a></li>
-      <li><a href="#"><img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">Моноподы для селфи</a></li>
-      <li><a href="#"><img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">Экшн-камеры</a></li>
-      <li><a href="#"><img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">Фитнес-браслеты</a></li>
-      <li><a href="#"><img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">Умные часы</a></li>
-      <li><a href="#"><img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">Квадрокоптеры</a></li>
+      <li>
+        <a class="category-emblem" href="#"><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность"></a>
+        <a class="category-name" href="#"><p>Виртуальная реальность</p></a>
+      </li>
+      <li>
+        <a class="category-emblem" href="#"><img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи"></a>
+        <a class="category-name" href="#"><p>Моноподы для селфи</p></a>
+      </li>
+      <li>
+        <a class="category-emblem" href="#"><img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры"></a>
+        <a class="category-name" href="#"><p>Экшн-камеры</p></a>
+      </li>
+      <li>
+        <a class="category-emblem" href="#"><img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты"></a>
+        <a class="category-name" href="#"><p>Фитнес-браслеты</p></a>
+      </li>
+      <li>
+        <a class="category-emblem" href="#"><img src="img/popular-5.svg" width="56" height="98" alt="Умные часы"></a>
+        <a class="category-name" href="#"><p>Умные часы</p></a>
+      </li>
+      <li>
+        <a class="category-emblem" href="#"><img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры"></a>
+        <a class="category-name" href="#"><p>Квадрокоптеры</p></a>
+      </li>
     </ul>
   </section>
   <section class="shop-services">
@@ -143,18 +161,21 @@
       </div>
       <ul class="slides-list">
         <li>
+          <button class="delivery">Доставка</button>
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           <img src="img/delivery.svg" width="136" height="164">
         </li>
         <li>
+          <button class="warranty">Гарантия</button>
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
           <img src="img/warranty.svg" width="171" height="195">
         </li>
         <li>
+          <button class="credit">Кредит</button>
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
             условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -224,7 +245,7 @@
 </main>
 <footer class="main-footer">
   <a class="main-footer-logo" href="#">
-    <img src="img/logo.jpg" width="163" height="36" alt="Логотип «DEVICE»">
+    <img src="img/logo-footer.png" width="163" height="36" alt="Логотип «DEVICE»">
   </a>
   <address>г. Москва, ул. Строителей, 15</address>
   <ul class="site-footer-nav">

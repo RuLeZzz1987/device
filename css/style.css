@@ -1,0 +1,348 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('fonts/OpenSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('fonts/opensans.woff2') format('woff2'), /* Super Modern Browsers */ url('fonts/opensans.woff') format('woff'), /* Pretty Modern Browsers */ url('fonts/OpenSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  /* url('webfont.svg#svgFontName') format('svg'); Legacy iOS */
+  /*font-weight: normal;*/
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Gilroy';
+  scr: url('fonts/gilroylight.eot');
+  src: url('fonts/gilroylight.eot?#iefix') format('embedded-opentype'),
+  url('fonts/gilroylight.woff2') format('woff2'),
+  url('fonts/gilroylight.woff') format('woff'),
+  url('fonts/gilroyextrabold.ttf') format('truetype');
+  /*font-weight: normal;*/
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #c0c0c0;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  background-color: #f7e296;
+}
+
+.site-nav {
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.site-nav a,
+.user-nav a,
+.user-nav,
+.sub-menu {
+  color: #000000;
+  list-style: none;
+}
+
+.user-nav a:hover,
+.user-nav a:focus,
+.site-nav a:hover,
+.site-nav a:focus,
+.sub-menu a:hover,
+.sub-menu a:focus {
+  color: #887c50;
+}
+
+.user-nav a:active,
+.site-nav a:active,
+.sub-menu a:active {
+  color: #c4b376;
+}
+
+.slider-goods {
+  list-style: none;
+}
+
+.slide-number {
+  color: #ffffff;
+  font-size: 179px;
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  line-height: 179px;
+  background-color: #f7e296;
+  font-weight: bold;
+}
+
+.product-slogan {
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+  font-weight: 700;
+}
+
+button,
+.more-about-us,
+.write-us {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: none;
+}
+
+button:active {
+  color: #c4b376;
+}
+
+.parameters-goods {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 100;
+}
+
+.name-parameters-goods {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-emblem {
+  background-color: #f7e296;
+}
+
+.category-emblem:hover {
+  background-color: #f0c52e;
+}
+
+.category-name {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.slides-list h3,
+.about-us h2,
+.contacts h2 {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.transport-companies-list {
+  list-style: none;
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.main-footer-logo {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffc600;
+  font-weight: 700;
+}
+
+.main-footer-logo:hover,
+.main-footer-logo:focus {
+  color: #c39b22;
+}
+
+.main-footer-logo:active {
+  color: #8d7536;
+}
+
+address {
+  font-style: normal;
+}
+
+.site-footer-nav,
+.social-networks,
+.footer-user-nav {
+  list-style: none;
+}
+
+.site-footer-nav a {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer-user-nav a {
+  color: #ffffff;
+}
+
+.site-footer-nav a:hover,
+.site-footer-nav a:focus,
+.footer-user-nav a:hover,
+.footer-user-nav a:focus {
+  color: #c3c3c3;
+}
+
+.site-footer-nav a:active,
+.footer-user-nav a:active {
+  color: #8d8d8d;
+}
+
+.social-networks {
+  text-align: center;
+}
+
+.phone-number a {
+  color: #ffffff;
+}
+
+.page-title {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.breadcrumbs a {
+  color: #cacaca;
+}
+
+.breadcrumbs a:hover {
+  color: #8d8d8d;
+}
+
+.breadcrumbs a:active {
+  color: #eeeeee;
+}
+
+.breadcrumbs li,
+.available-colors li,
+.available-bluetooth li,
+.sort li,
+.sort-function li,
+.goods-list li,
+.pagination li {
+  list-style: none;
+}
+.filters {
+  background-color: #eeeeee;
+}
+.filter-form-button {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  border: none;
+}
+.cost-filter {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-form legend {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.filter-form ul {
+  line-height: 40px;
+  color: #000000;
+}
+
+.filter-color-input:hover + label,
+.filter-color-input:focus + label,
+.filter-bluetooth-input:hover + label,
+.filter-bluetooth-input:focus + label {
+  color: #606060;
+}
+
+.filter-color-input:active + label,
+.filter-bluetooth-input:active + label {
+  color: #000000;
+}
+
+.filter-color-input:disabled + label {
+  color: #b3b3b3;
+
+  opacity: 0.5;
+}
+.sort-goods-by {
+  background-color: #ebebeb;
+}
+.sort-goods-by p {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24 p;
+  color: #000000;
+}
+
+.sort-by a,
+.sort-function a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #cacaca;
+}
+
+.sort-by a:hover,
+.sort-by a:focus,
+.sort-function a:hover,
+.sort-function a:focus {
+  color: #8d8d8d;
+}
+
+.sort-by a:active,
+.sort-function a:active {
+  color: #000000;
+}
+.sku-name {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.sku-price {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #cacaca;
+}
+.pagination li {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ebebeb;
+}
+
+
