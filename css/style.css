@@ -1,20 +1,29 @@
 @font-face {
   font-family: 'PT Sans';
-  src: url('fonts/OpenSans-Regular.eot'); /* IE9 Compat Modes */
-  src: url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('fonts/opensans.woff2') format('woff2'), /* Super Modern Browsers */ url('fonts/opensans.woff') format('woff'), /* Pretty Modern Browsers */ url('fonts/OpenSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
-  /* url('webfont.svg#svgFontName') format('svg'); Legacy iOS */
-  /*font-weight: normal;*/
+  src: url('../fonts/opensanslight.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/opensanslight.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: lighter;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/opensans.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/opensans.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: 'PT Gilroy';
-  scr: url('fonts/gilroylight.eot');
-  src: url('fonts/gilroylight.eot?#iefix') format('embedded-opentype'),
-  url('fonts/gilroylight.woff2') format('woff2'),
-  url('fonts/gilroylight.woff') format('woff'),
-  url('fonts/gilroyextrabold.ttf') format('truetype');
-  /*font-weight: normal;*/
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+  url('../fonts/gilroylight.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Gilroy';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+  url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -23,7 +32,6 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 700;
   color: #c0c0c0;
   background-color: #ffffff;
 }
@@ -35,18 +43,26 @@ a {
 .main-navigation {
   background-color: #f7e296;
 }
-
+.user-nav {
+  padding: 0;
+}
+.user-nav a,
+.site-nav a,
+.sub-menu a {
+  color: #000000;
+}
 .site-nav {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
   list-style: none;
+  padding: 0;
+
 }
 
-.site-nav a,
-.user-nav a,
 .user-nav,
 .sub-menu {
-  color: #000000;
   list-style: none;
 }
 
@@ -70,30 +86,31 @@ a {
 }
 
 .slide-number {
-  color: #ffffff;
-  font-size: 179px;
   font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 179px;
   line-height: 179px;
+  font-weight: 700;
+  color: #ffffff;
   background-color: #f7e296;
-  font-weight: bold;
 }
 
 .product-slogan {
   font-size: 47px;
   line-height: 56px;
-  color: #000000;
   font-weight: 700;
+  color: #000000;
+
 }
 
 button,
 .more-about-us,
 .write-us {
   font-family: 'PT Gilroy', Arial, sans-serif;
+  font-weight: 700;
   text-align: center;
   color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
-  font-weight: 700;
   background-color: #ffffff;
   border: none;
 }
@@ -108,7 +125,6 @@ button:active {
   line-height: 48px;
   color: #000000;
   background-color: #ffffff;
-  font-weight: 100;
 }
 
 .name-parameters-goods {
@@ -188,6 +204,8 @@ address {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -249,18 +267,23 @@ address {
 .pagination li {
   list-style: none;
 }
+
 .filters {
   background-color: #eeeeee;
 }
+
 .filter-form-button {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 18px;
   border: none;
 }
-.cost-filter {
+
+.cost-filter p {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -296,13 +319,16 @@ address {
 
   opacity: 0.5;
 }
+
 .sort-goods-by {
   background-color: #ebebeb;
 }
+
 .sort-goods-by p {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 16px;
-  line-height: 24 p;
+  line-height: 24px;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -324,6 +350,7 @@ address {
 .sort-function a:active {
   color: #000000;
 }
+
 .sku-name {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 18px;
@@ -331,18 +358,40 @@ address {
   font-weight: 700;
   color: #000000;
 }
+
 .sku-price {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #cacaca;
 }
-.pagination li {
+
+.pagination a {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #000000;
   background-color: #ebebeb;
 }
+.pagination-number-page a:hover,
+.pagination-number-page a:focus {
+  color: #8d8d8d;
+}
+.pagination-number-page a:active {
+  color: #000000;
+}
 
+.pagination-page-next a:hover,
+.pagination-page-prev a:hover,
+.pagination-page-next a:focus,
+.pagination-page-prev a:focus {
+  background-color: #d9d9d9;
+}
 
+.pagination-page-prev a:active,
+.pagination-page-next a:active {
+  color: #acacac;
+  background-color: #d9d9d9;
+}
