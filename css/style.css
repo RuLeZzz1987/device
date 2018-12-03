@@ -39,7 +39,12 @@ body {
 a {
   text-decoration: none;
 }
-
+.main-header {
+  width: 1160px;
+  margin: 0;
+  padding-right: 140px;
+  padding-left: 140px;
+}
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -119,7 +124,12 @@ a {
 .sub-menu a:active {
   color: #c4b376;
 }
-
+.landing {
+  width: 1160px;
+  margin: 0;
+  padding-right: 140px;
+  padding-left: 140px;
+}
 .slider-goods {
   list-style: none;
 }
@@ -271,6 +281,8 @@ button:active {
 }
 
 .main-footer {
+  padding-left: 140px;
+  padding-right: 140px;
   width: 1160px;
   display: flex;
   background-color: #464646;
@@ -297,7 +309,7 @@ button:active {
 address {
   font-style: normal;
 }
-.logo-footer-address-wrap {
+.logo-footer-address-wrapper {
   margin: 50px;
   display: flex;
   flex-direction: column;
@@ -375,6 +387,12 @@ address {
 .visually-hidden {
   display: none;
 }
+.catalog-page {
+  padding-left: 140px;
+  padding-right: 140px;
+  width: 1160px;
+
+}
 .page-title {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 47px;
@@ -441,6 +459,7 @@ address {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  padding-left: 50px;
 }
 
 .filter-form fieldset {
@@ -484,7 +503,7 @@ address {
 .sort-goods-by {
   background-color: #ebebeb;
   display: flex;
-  width: 900px;
+  width: 840px;
 }
 .sort {
   display: flex;
@@ -503,6 +522,7 @@ address {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  padding-left: 50px;
 }
 
 .sort-by a,
