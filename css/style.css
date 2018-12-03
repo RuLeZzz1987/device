@@ -41,10 +41,37 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  width: 1140px;
   background-color: #f7e296;
+
+}
+.search-user-nav-wrapper {
+  width: 1160px;
+  display: flex;
+  align-items: flex-start;
+
 }
 .user-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 610px;
   padding: 0;
+  margin-top: 0;
+}
+.login-link {
+  margin-left: 50px;
+  margin-right: 250px;
+}
+.compare {
+  margin-right: 35px;
+}
+.basket {
+  margin-right: 55px;
+}
+.site-search {
+  width: 550px;
 }
 .user-nav a,
 .site-nav a,
@@ -52,15 +79,27 @@ a {
   color: #000000;
 }
 .site-nav {
+  display: flex;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
   list-style: none;
   padding: 0;
-
 }
-
+.catalog {
+  margin-left: 0px;
+  margin-right: 430px;
+}
+.delivery {
+  margin-right: 100px;
+}
+.guarantees {
+  margin-right: 105px;
+}
+.sub-menu {
+  display: none;
+}
 .user-nav,
 .sub-menu {
   list-style: none;
@@ -84,7 +123,33 @@ a {
 .slider-goods {
   list-style: none;
 }
-
+.monopod {
+  display: flex;
+}
+.about-monopod {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  margin-left: 100px;
+}
+.tracker {
+  display: flex;
+}
+.about-tracker {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  margin-left: 100px;
+}
+.quadcopter {
+  display: flex;
+}
+.about-quadcopter {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  margin-left: 100px;
+}
 .slide-number {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 179px;
@@ -92,6 +157,7 @@ a {
   font-weight: 700;
   color: #ffffff;
   background-color: #f7e296;
+  margin: 0;
 }
 
 .product-slogan {
@@ -134,6 +200,7 @@ button:active {
 
 .category-list {
   list-style: none;
+  display: flex;
 }
 
 .category-emblem {
@@ -151,7 +218,31 @@ button:active {
   font-weight: 700;
   color: #000000;
 }
-
+.delivery {
+  display: flex;
+}
+.delivery-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.warranty {
+  display: flex;
+}
+.warranty-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.credit {
+  display: flex;
+}
+.credit-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.brand-list {
+  list-style: none;
+  display: flex;
+}
 .slides-list h3,
 .about-us h2,
 .contacts h2 {
@@ -160,7 +251,17 @@ button:active {
   line-height: 48px;
   color: #000000;
 }
-
+.about-us-contacts-wrapper {
+  display: flex;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
 .transport-companies-list {
   list-style: none;
   font-family: 'PT Gilroy', Arial, sans-serif;
@@ -170,6 +271,8 @@ button:active {
 }
 
 .main-footer {
+  width: 1160px;
+  display: flex;
   background-color: #464646;
 }
 
@@ -179,6 +282,7 @@ button:active {
   line-height: 48px;
   color: #ffc600;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .main-footer-logo:hover,
@@ -193,7 +297,12 @@ button:active {
 address {
   font-style: normal;
 }
+.logo-footer-address-wrap {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
 
+}
 .site-footer-nav,
 .social-networks,
 .footer-user-nav {
@@ -224,15 +333,48 @@ address {
 .footer-user-nav a:active {
   color: #8d8d8d;
 }
-
+.footer-nav-item {
+  margin: 10px;
+  margin-top: 100px;
+}
+.footer-nav-social-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.site-footer-nav {
+  display: flex;
+  width: 450px;
+  margin-top: 20px;
+}
 .social-networks {
   text-align: center;
+  display: flex;
+  margin-left: 70px;
+}
+.nav-phone-copyright-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer-user-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin-top: 50px;
+  margin-left: -80px;
+
 }
 
 .phone-number a {
   color: #ffffff;
+  margin-left: 155px;
 }
-
+.footer-copyright {
+  margin-left: 285px;
+}
+.visually-hidden {
+  display: none;
+}
 .page-title {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 47px;
@@ -244,6 +386,14 @@ address {
 .breadcrumbs {
   font-size: 14px;
   line-height: 24px;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
 }
 
 .breadcrumbs a {
@@ -267,9 +417,16 @@ address {
 .pagination li {
   list-style: none;
 }
+.filters-catalog-wrapper {
+  width: 1200px;
+  display: flex;
 
+}
 .filters {
   background-color: #eeeeee;
+  width: 300px;
+  display: flex;
+
 }
 
 .filter-form-button {
@@ -277,7 +434,6 @@ address {
   font-size: 18px;
   border: none;
 }
-
 .cost-filter p {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 16px;
@@ -319,15 +475,32 @@ address {
 
   opacity: 0.5;
 }
+.sort-catalog-pagination-wrapper {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
 
+}
 .sort-goods-by {
   background-color: #ebebeb;
+  display: flex;
+  width: 900px;
 }
-
+.sort {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  margin-right: 50px;
+}
+.sort-function {
+  display: flex;
+  justify-content: space-between;
+}
 .sort-goods-by p {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
@@ -350,7 +523,22 @@ address {
 .sort-function a:active {
   color: #000000;
 }
-
+.goods-list {
+  padding: 0;
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+}
+.stock-keeping-unit {
+  width: 360px;
+  margin-right: 40px;
+}
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
 .sku-name {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 18px;
@@ -365,7 +553,28 @@ address {
   line-height: 24px;
   color: #cacaca;
 }
+.pagination {
+  background-color: #ebebeb;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-left: 70px;
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+}
+.page-prev {
+  padding-left: 20px;
+  margin-left: 0;
+  margin-right: 230px;
 
+}
+.page-next {
+  padding-right: 20px;
+  margin-right: 0;
+  margin-left: 230px;
+}
 .pagination a {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 16px;
@@ -375,23 +584,24 @@ address {
   color: #000000;
   background-color: #ebebeb;
 }
-.pagination-number-page a:hover,
-.pagination-number-page a:focus {
+.pagination-number-page:hover,
+.pagination-number-page:focus {
   color: #8d8d8d;
 }
-.pagination-number-page a:active {
+.pagination-number-page:active {
   color: #000000;
 }
 
-.pagination-page-next a:hover,
-.pagination-page-prev a:hover,
-.pagination-page-next a:focus,
-.pagination-page-prev a:focus {
+.pagination-page-next:hover,
+.pagination-page-prev:hover,
+.pagination-page-next:focus,
+.pagination-page-prev:focus {
   background-color: #d9d9d9;
 }
 
-.pagination-page-prev a:active,
-.pagination-page-next a:active {
+.pagination-page-prev:active,
+.pagination-page-next:active {
   color: #acacac;
   background-color: #d9d9d9;
 }
+
