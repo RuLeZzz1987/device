@@ -39,11 +39,13 @@ body {
 a {
   text-decoration: none;
 }
+.img {
+  max-width: 100%;
+  height: auto;
+}
 .main-header {
   width: 1160px;
-  margin: 0;
-  padding-right: 140px;
-  padding-left: 140px;
+  margin: 0 auto;
 }
 .main-navigation {
   display: flex;
@@ -126,13 +128,29 @@ a {
 }
 .landing {
   width: 1160px;
-  margin: 0;
-  padding-right: 140px;
-  padding-left: 140px;
+  margin: 0 auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .slider-goods {
   list-style: none;
 }
+
 .monopod {
   display: flex;
 }
@@ -144,6 +162,7 @@ a {
 }
 .tracker {
   display: flex;
+  display: none;
 }
 .about-tracker {
   display: flex;
@@ -153,6 +172,7 @@ a {
 }
 .quadcopter {
   display: flex;
+  display: none;
 }
 .about-quadcopter {
   display: flex;
@@ -167,7 +187,8 @@ a {
   font-weight: 700;
   color: #ffffff;
   background-color: #f7e296;
-  margin: 0;
+  margin: 0px;
+
 }
 
 .product-slogan {
@@ -211,16 +232,25 @@ button:active {
 .category-list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+}
+/*.category-list li:nth-last-child(-1n + 6) {
+  margin-right: 40px;
+}*/
+.category-emblem li {
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+  padding: 30px;
 }
 
-.category-emblem {
+/*.category-emblem {
   background-color: #f7e296;
 }
 
 .category-emblem:hover {
   background-color: #f0c52e;
-}
-
+}*/
 .category-name {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 18px;
@@ -228,30 +258,36 @@ button:active {
   font-weight: 700;
   color: #000000;
 }
+.slides-list {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+}
 .delivery {
   display: flex;
 }
 .delivery-wrapper {
   display: flex;
   flex-direction: column;
+  width: 450px;
 }
 .warranty {
   display: flex;
+  display: none;
 }
 .warranty-wrapper {
   display: flex;
   flex-direction: column;
+  width: 455px;
 }
 .credit {
   display: flex;
+  display: none;
 }
 .credit-wrapper {
   display: flex;
   flex-direction: column;
-}
-.brand-list {
-  list-style: none;
-  display: flex;
+  width: 445px;
 }
 .slides-list h3,
 .about-us h2,
@@ -260,6 +296,10 @@ button:active {
   font-size: 47px;
   line-height: 48px;
   color: #000000;
+}
+.brand-list {
+  list-style: none;
+  display: flex;
 }
 .about-us-contacts-wrapper {
   display: flex;
@@ -279,12 +319,12 @@ button:active {
   line-height: 40px;
   color: #000000;
 }
-
-.main-footer {
-  padding-left: 140px;
-  padding-right: 140px;
+.footer-wrapper {
   width: 1160px;
   display: flex;
+  margin: 0 auto;
+}
+.main-footer {
   background-color: #464646;
 }
 
@@ -374,7 +414,6 @@ address {
   width: 350px;
   margin-top: 50px;
   margin-left: -80px;
-
 }
 
 .phone-number a {
@@ -384,14 +423,18 @@ address {
 .footer-copyright {
   margin-left: 285px;
 }
-.visually-hidden {
+
+.catalog-page {
+  width: 1160px;
+  display: flex;
+  margin: 0 auto;
+
+}
+.modal-modal-write-us {
   display: none;
 }
-.catalog-page {
-  padding-left: 140px;
-  padding-right: 140px;
-  width: 1160px;
-
+.modal-modal-map {
+  display: none;
 }
 .page-title {
   font-family: 'PT Gilroy', Arial, sans-serif;
@@ -444,22 +487,90 @@ address {
   background-color: #eeeeee;
   width: 300px;
   display: flex;
+  flex-direction: column;
 
 }
+/*.cost-filter {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #cecece;
+}*/
 
+.filter-main-title {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 23px 175px 23px 55px;
+  background-color: #dcdcdc;
+
+}
+.cost-filter-title {
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  margin-top: 12px;
+}
+.cost-controls {
+  height: 140px;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  border-top: solid 2px #000000;
+  border-bottom: solid 2px #000000;
+}
+.price-controls span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: top;
+}
+.range-controls {
+  position: relative;
+}
+.range-controls .scale {
+  height: 2px;
+  background-color: #dbdbdb;
+}
+.scale {
+  width: 200px;
+  position: absolute;
+  top: 35px;
+}
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+}
+.range-toggle-min {
+  position: absolute;
+  top: 25px;
+  left: -5px;
+}
+.range-toggle-max {
+  position: absolute;
+  top: 25px;
+  left: 105px;
+}
 .filter-form-button {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 18px;
   border: none;
-}
-.cost-filter p {
-  font-family: 'PT Gilroy', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-  padding-left: 50px;
 }
 
 .filter-form fieldset {
