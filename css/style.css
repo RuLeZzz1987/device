@@ -1283,10 +1283,7 @@ legend {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #000000;
-  padding-left: 70px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-right: 54px;
+  padding: 23px 54px 23px 70px;
   margin: 0;
 }
 .sort {
