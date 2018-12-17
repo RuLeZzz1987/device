@@ -8,7 +8,7 @@
   <!--<link rel="stylesheet" href="css/outline.css">-->
 </head>
 <body>
-<section class="modal modal-write-us">
+<section class="modal modal-write-us"> <!--modal-show-->
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="write-us-form" action="#" method="post">
       <p class="write-us-form-group">
@@ -26,7 +26,7 @@
       <button class="write-us-button" type="submit">Отправить</button>
     </form>
 </section>
-<section class="modal modal-map">
+<section class="modal modal-map"> <!--modal-show-->
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <p class="modal-modal-map-content">
       <img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей 15, Москва">
@@ -83,9 +83,9 @@
   <section class="exclusive-products">
     <h2 class="visually-hidden">Лучший выбор</h2>
     <div class="slider-our-goods">
-      <input type="radio" id="selfie" name="toggle" checked>
-      <input type="radio" id="bracelet" name="toggle">
-      <input type="radio" id="quadcopter" name="toggle">
+      <input class="visually-hidden" type="radio" id="selfie" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="bracelet" name="toggle">
+      <input class="visually-hidden" type="radio" id="quadcopter" name="toggle">
     </div>
     <div class="slider-controls-our-goods">
       <label for="selfie"></label>
@@ -94,15 +94,13 @@
     </div>
     <div class="slider-slides-goods">
       <ul class="slider-goods">
-        <li class="monopod">
+        <li class="monopod slide" id="slide1">
           <img class="selfie" src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           <div class="about-product about-monopod">
             <p class="slide-number number-1">01</p>
             <p class="product-slogan slogan-1">Делай селфи,<br> как Бен Стиллер!</p>
             <p class="description-good description-good-1">Самая длинная палка для селфи доступна в нашем магазине.
-              Восемь (Восемь,
-              Карл!)
-              метров длиной и весом всего 5 килограмм.</p>
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <button class="show-more-information">Подробнее</button>
             <table class="characteristics-goods">
               <tr>
@@ -118,15 +116,14 @@
             </table>
           </div>
         </li>
-        <li class="tracker">
+        <li class="tracker slide" id="slide2">
           <img class="fitness-bracelet" src="img/slider-2.png" width="345" height="485"
                alt="Мотивирующий фитнес-браслет">
           <div class="about-product about-tracker">
             <p class="slide-number number-2">02</p>
             <p class="product-slogan">Худеем<br>правильно!</p>
             <p class="description-good description-good-2">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не
-              пропускать занятия и
-              соблюдать диету.</p>
+              пропускать занятия и соблюдать диету.</p>
             <button class="show-more-information">Подробнее</button>
             <table class="characteristics-goods">
               <tr>
@@ -138,14 +135,13 @@
             </table>
           </div>
         </li>
-        <li class="quadcopter">
+        <li class="quadcopter slide" id="slide3">
           <img class="quadcopter" src="img/slider-3.png" width="526" height="334" alt="Необычный квардакоптер">
           <div class="about-product about-quadcopter">
             <p class="slide-number number-3">03</p>
             <p class="product-slogan slogan-3">Порхает как бабочка, жалит как пчела!</p>
             <p class="description-good description-good-3">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным
-              лазером,
-              замаскированным под стандартную камеру.</p>
+              лазером, замаскированным под стандартную камеру.</p>
             <button class="show-more-information">Подробнее</button>
             <table class="characteristics-goods">
               <tr>
@@ -201,11 +197,11 @@
     <div class="service-wrapper">
       <h2 class="visually-hidden">Наши услуги для вас</h2>
       <div class="slider-our-services">
-        <input type="radio" id="delivery" name="delivery" checked>
+        <input type="radio" id="delivery-button" name="delivery" checked>
         <input type="radio" id="warranty" name="warranty">
         <input type="radio" id="credit" name="credit">
         <div class="slider-controls-our-services">
-          <label for="delivery">Доставка</label>
+          <label for="delivery-button">Доставка</label>
           <label for="warranty">Гарантия</label>
           <label for="credit">Кредит</label>
         </div>

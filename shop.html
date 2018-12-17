@@ -12,7 +12,7 @@
   <a class="main-header-logo" href="#">
     <img src="img/logo-header.png" width="163" height="36" alt="Логотип «DEVICE»">
   </a>
-  <nav class="main-navigation">
+  <nav class="main-navigation shop-navigation">
     <div class="search-user-nav-wrapper">
       <form class="site-search" action="#" method="post">
         <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
@@ -88,23 +88,28 @@
             <legend>Цвет</legend>
             <ul class="available-colors">
               <li class="option-color">
-                <input class="visually-hidden color-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
+                <input class="visually-hidden color-input filter-input-checkbox" type="checkbox" name="black" id="black"
+                       checked>
                 <label class="selected-color" for="black">Черный</label>
               </li>
               <li class="option-color">
-                <input class="visually-hidden color-input filter-input-checkbox" type="checkbox" name="white" id="white">
+                <input class="visually-hidden color-input filter-input-checkbox" type="checkbox" name="white"
+                       id="white">
                 <label class="selected-color" for="white">Белый</label>
               </li>
               <li class="option-color">
-                <input class="visually-hidden color-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
+                <input class="visually-hidden color-input filter-input-checkbox" type="checkbox" name="blue" id="blue"
+                       checked>
                 <label class="selected-color" for="blue">Синий</label>
               </li>
               <li class="option-color">
-                <input class="visually-hidden color-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
+                <input class="visually-hidden color-input filter-input-checkbox" type="checkbox" name="red" id="red"
+                       checked>
                 <label class="selected-color" for="red">Красный</label>
               </li>
               <li class="option-color">
-                <input class="visually-hidden color-input filter-input-checkbox disabled-color" type="checkbox" name="pink" id="pink" disabled>
+                <input class="visually-hidden color-input filter-input-checkbox disabled-color" type="checkbox"
+                       name="pink" id="pink" disabled>
                 <label class="selected-color" for="pink">Розовый</label>
               </li>
             </ul>
@@ -113,11 +118,13 @@
             <legend>Bluetooth</legend>
             <ul class="available-bluetooth">
               <li>
-                <input class="visually-hidden bluetooth-input filter-bluetooth-input" type="radio" name="option" value="yes" id="yes" checked>
+                <input class="visually-hidden bluetooth-input filter-bluetooth-input" type="radio" name="option"
+                       value="yes" id="yes" checked>
                 <label class="selected-option" for="yes">Есть</label>
               </li>
               <li>
-                <input class="visually-hidden bluetooth-input filter-bluetooth-input" type="radio" name="option" value="no" id="no">
+                <input class="visually-hidden bluetooth-input filter-bluetooth-input" type="radio" name="option"
+                       value="no" id="no">
                 <label class="selected-option" for="no">Нет</label>
               </li>
             </ul>
@@ -142,17 +149,23 @@
           <h1 class="visually-hidden">Список моноподов</h1>
           <ul class="goods-list">
             <li class="stock-keeping-unit">
-              <p class="sku-picture">
-                <a href="catalog-item.html">
-                  <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                </a>
-              </p>
-              <h2>
-                <a class="signature" href="catalog-item.html">
-                  <span class="sku-name">Любительская селфи-палка</span>
-                  <span class="sku-price">500 руб.</span>
-                </a>
-              </h2>
+              <div class="stock-keeping-unit__inner">
+                <p class="sku-picture">
+                  <a href="catalog-item.html">
+                    <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  </a>
+                </p>
+                <h2>
+                  <a class="signature" href="catalog-item.html">
+                    <span class="sku-name">Любительская селфи-палка</span>
+                    <span class="sku-price">500 руб.</span>
+                  </a>
+                </h2>
+              </div>
+              <div class="stock-keeping-unit__mask">
+                <a class="in-garbage button-decoration mask" href="#">в корзину</a>
+                <a class="add-to-compare mask" href="#">Добавить к сравнению</a>
+              </div>
             </li>
             <li class="stock-keeping-unit">
               <p class="sku-picture">

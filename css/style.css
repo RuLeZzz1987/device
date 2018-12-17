@@ -304,6 +304,9 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin-top: -112px;
 }
+.slide {
+  display: none;
+}
 
 .slider-slides-goods {
   /*width: 300%;*/
@@ -342,6 +345,16 @@ input[type="radio"].visually-hidden {
 }
 #quadcopter:checked ~ slider-slides .slider-goods {
   transform: translate(-2320px);
+}*/
+/*#selfie:checked ~ .slider-slides-goods #slide1,
+#bracelet:checked ~ .slider-slides-goods #slide2,
+#quadcopter:checked ~ .slider-slides-goods #slide3 {
+  display: block;
+}
+#selfie:checked ~ .slider-slides-goods label[for="selfie"],
+#bracelet:checked ~ .slider-slides-goods label[for="bracelet"],
+#quadcopter:checked ~ .slider-slides-goods label[for="quadcopter"] {
+  background-color: #91c92f;
 }*/
 .product-slogan {
   margin-top: 80px;
@@ -452,9 +465,13 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000000;
 }
+button {
+  background: none;
+}
 button,
 .more-about-us,
 .write-us,
+.in-garbage,
 .slider-controls-our-services label {
   display: block;
   font-family: 'PT Gilroy', Arial, sans-serif;
@@ -580,8 +597,24 @@ button:active {
   width: 880px;
   margin: 0;
   padding: 0;
+  position: relative;
   /*display: none;*/
 }
+/*label .delivery-button::before {
+  content:'';
+  position: absolute;
+  top: 35%;
+  left: -10%;
+  width: 115%;
+  height: 8px;
+  background: #f0c52e;
+  transition: all 300ms ease;
+  z-index: -1;
+}
+label .delivery-button:hover:before {
+  height: 100%;
+  top: 0;
+}*/
 .delivery-wrapper {
   display: flex;
   flex-direction: column;
@@ -1046,6 +1079,10 @@ address::after {
   display: flex;
   margin: 0 auto;
 }
+header .shop-navigation {
+  height: 186px;
+  margin-bottom: 40px;
+}
 .page-title {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 47px;
@@ -1055,7 +1092,6 @@ address::after {
   margin: 0;
   padding: 0;
   margin-left: 60px;
-  margin-top: -78px;/* очень временно*/
   margin-bottom: 25px;
 }
 
@@ -1222,6 +1258,7 @@ button:hover:before {
   height: 100%;
   top: 0;
 }
+
 .filter-form fieldset {
   margin: 0;
   padding: 0;
@@ -1412,6 +1449,7 @@ legend {
 .stock-keeping-unit {
   width: 360px;
   margin-right: 40px;
+  position: relative;
 }
 .catalog-item:nth-child(2n) {
   margin-right: 0;
@@ -1433,6 +1471,48 @@ legend {
   line-height: 24px;
   color: #cacaca;
 }
+.stock-keeping-unit__mask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  background: #ebebeb;
+
+  /*transform: translateY(100%);*/
+  transition: all .27s ease-in-out;
+}
+.stock-keeping-unit__mask:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 100%;
+}
+.stock-keeping-unit__mask a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all .27s .27s ease-in-out;
+}
+.stock-keeping-unit:hover .stock-keeping-unit__mask {
+  opacity: 0.85;
+  transform: translateY(0%);
+}
+/*.button-decoration::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  width: 100%;
+  height: 8px;
+  background: #f0c52e;
+  transition: all 300ms ease;
+  z-index: -1;
+}
+.button-decoration:hover::before {
+  height: 100%;
+  top: 0;
+}*/
 .pagination {
   background-color: #ebebeb;
   padding-left: 0;
