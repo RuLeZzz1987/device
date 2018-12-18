@@ -64,16 +64,17 @@ a {
   display: flex;
   align-items: flex-start;
   margin-top: 43px;
+  position: relative;
 }
 .site-search {
   margin-left: 92px;
-  position: relative;
 }
-.site-search .search-field::before {
+
+.site-search::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: 63px;
   display: block;
   width: 16px;
   height: 16px;
@@ -329,7 +330,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #000000;
   cursor: pointer;
 }
-/*#selfie:checked ~ .slider-controls-our-goods label[for="selfie"],
+#selfie:checked ~ .slider-controls-our-goods label[for="selfie"],
 #bracelet:checked ~ .slider-controls-our-goods label[for="bracelet"],
 #quadcopter:checked ~ .slider-controls-our-goods label[for="quadcopter"] {
   width: 5px;
@@ -338,14 +339,14 @@ input[type="radio"].visually-hidden {
   border: 1px solid #000000;
 }
 #selfie:checked ~ .slider-slides .slider-goods {
-  transform: translate(0);
+  transform: translateX(0);
 }
 #bracelet:checked ~ .slider-slides .slider-goods {
-  transform: translate(-1160px);
+  transform: translateX(-1160px);
 }
 #quadcopter:checked ~ slider-slides .slider-goods {
-  transform: translate(-2320px);
-}*/
+  transform: translateX(-2320px);
+}
 /*#selfie:checked ~ .slider-slides-goods #slide1,
 #bracelet:checked ~ .slider-slides-goods #slide2,
 #quadcopter:checked ~ .slider-slides-goods #slide3 {
@@ -1101,7 +1102,7 @@ header .shop-navigation {
   padding: 0;
   margin: 0;
   margin-left: 60px;
-  margin-bottom: 46px;
+  margin-bottom: 42px;
   display: flex;
   justify-content: space-between;
   width: 380px;
@@ -1212,6 +1213,7 @@ legend {
   position: absolute;
   top: 35px;
 }
+
 .range-controls .bar {
   width: 60%;
   height: 2px;
@@ -1472,11 +1474,13 @@ legend {
   color: #cacaca;
 }
 .stock-keeping-unit__mask {
+  display: none;
   position: absolute;
-  top: 0px;
+  top: 16px;
   left: 0px;
-  height: 100%;
+  height: 380px;
   background: #ebebeb;
+  opacity: 0.7;
 
   /*transform: translateY(100%);*/
   transition: all .27s ease-in-out;
@@ -1486,15 +1490,38 @@ legend {
   display: inline-block;
   vertical-align: middle;
   width: 1px;
-  height: 100%;
+  height: 380px;
 }
-.stock-keeping-unit__mask a {
+.stock-keeping-unit__mask .in-garbage {
   display: inline-block;
-  vertical-align: middle;
-  width: 100%;
+  position: absolute;
+  top: 180px;
+  left: 95px;
+  font-size: 18px;
+  width: 50%;
   transition: all .27s .27s ease-in-out;
 }
+.stock-keeping-unit__mask .in-garbage:active {
+  color: #be9c22;
+}
+.stock-keeping-unit__mask .add-to-compare {
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  left: 110px;
+  font-size: 13px;
+  color: #a3a3a3;
+}
+.stock-keeping-unit__mask .add-to-compare:hover {
+  color: #000000;
+}
+.stock-keeping-unit__mask .add-to-compare:active {
+  color: #dddddd;
+}
 .stock-keeping-unit:hover .stock-keeping-unit__mask {
+  display: block;
+  width: 360px;
+  height: 380px;
   opacity: 0.85;
   transform: translateY(0%);
 }
