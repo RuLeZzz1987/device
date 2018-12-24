@@ -9,29 +9,29 @@
 </head>
 <body>
 <section class="modal modal-write-us"> <!--modal-show-->
-    <h2 class="visually-hidden">Напишите нам</h2>
-    <form class="write-us-form" action="#" method="post">
-      <p class="write-us-form-group">
-        <label for="fullname">Ваше имя:</label>
-        <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
-      </p>
-      <p class="write-us-form-group">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com">
-      </p>
-      <p class="write-us-form-group">
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="message" placeholder="В свободной форме" rows="7" cols="103"></textarea>
-      </p>
-      <button class="write-us-button" type="submit">Отправить</button>
-    </form>
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form class="write-us-form" action="#" method="post">
+    <p class="write-us-form-group">
+      <label for="fullname">Ваше имя:</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+    </p>
+    <p class="write-us-form-group">
+      <label for="email">Ваш e-mail:</label>
+      <input type="email" name="email" id="email" placeholder="email@example.com">
+    </p>
+    <p class="write-us-form-group">
+      <label for="message">Текст письма:</label>
+      <textarea name="message" id="message" placeholder="В свободной форме" rows="7" cols="103"></textarea>
+    </p>
+    <button class="write-us-button" type="submit">Отправить</button>
+  </form>
 </section>
 <section class="modal modal-map"> <!--modal-show-->
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p class="modal-modal-map-content">
-      <img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей 15, Москва">
-    </p>
-    <button class="modal-close" type="button"></button>
+  <h2 class="visually-hidden">Как до нас добраться</h2>
+  <p class="modal-modal-map-content">
+    <img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей 15, Москва">
+  </p>
+  <button class="modal-close" type="button"></button>
 </section>
 <header class="main-header">
   <a class="main-header-logo" href="#">
@@ -86,15 +86,13 @@
       <input class="visually-hidden" type="radio" id="selfie" name="toggle" checked>
       <input class="visually-hidden" type="radio" id="bracelet" name="toggle">
       <input class="visually-hidden" type="radio" id="quadcopter" name="toggle">
-    </div>
-    <div class="slider-controls-our-goods">
-      <label for="selfie"></label>
-      <label for="bracelet"></label>
-      <label for="quadcopter"></label>
-    </div>
-    <div class="slider-slides-goods">
+      <div class="slider-controls-our-goods">
+        <label class="slider-controls-item slider-controls-item--1" for="selfie"></label>
+        <label class="slider-controls-item slider-controls-item--2" for="bracelet"></label>
+        <label class="slider-controls-item slider-controls-item--3" for="quadcopter"></label>
+      </div>
       <ul class="slider-goods">
-        <li class="monopod slide" id="slide1">
+        <li class="monopod slide">
           <img class="selfie" src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           <div class="about-product about-monopod">
             <p class="slide-number number-1">01</p>
@@ -116,7 +114,7 @@
             </table>
           </div>
         </li>
-        <li class="tracker slide" id="slide2">
+        <li class="tracker slide">
           <img class="fitness-bracelet" src="img/slider-2.png" width="345" height="485"
                alt="Мотивирующий фитнес-браслет">
           <div class="about-product about-tracker">
@@ -135,7 +133,7 @@
             </table>
           </div>
         </li>
-        <li class="quadcopter slide" id="slide3">
+        <li class="quadcopter slide">
           <img class="quadcopter" src="img/slider-3.png" width="526" height="334" alt="Необычный квардакоптер">
           <div class="about-product about-quadcopter">
             <p class="slide-number number-3">03</p>
@@ -201,7 +199,7 @@
         <input type="radio" id="warranty" name="warranty">
         <input type="radio" id="credit" name="credit">
         <div class="slider-controls-our-services">
-          <label for="delivery-button">Доставка</label>
+          <label class="" for="delivery-button">Доставка</label>
           <label for="warranty">Гарантия</label>
           <label for="credit">Кредит</label>
         </div>
@@ -310,11 +308,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
               <g fill="#7e7e7e">
                 <path fill="##7e7e7e"
-                  d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/>
+                      d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/>
                 <path fill="##7e7e7e"
-                  d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/>
+                      d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/>
                 <path fill="##7e7e7e"
-                  d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/>
+                      d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/>
               </g>
             </svg>
           </a>
