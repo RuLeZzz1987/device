@@ -202,7 +202,6 @@ form {
   letter-spacing: 3px;
   list-style: none;
   padding: 0 60px;
-  padding-bottom: 37px;
 }
 .catalog {
   text-transform: uppercase;
@@ -223,6 +222,17 @@ form {
   height: 15px;
   background: url("../img/plus.svg") no-repeat 0 0;
 }
+
+.sub-menu::after {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  background-color: #f7e296;
+  height: 139px;
+  z-index: 1;
+  left: -60px;
+}
+
 .supply {
   text-transform: uppercase;
   margin-left: 0;
@@ -264,6 +274,11 @@ form {
 .sub-menu {
   list-style: none;
 }
+
+.sub-menu-item {
+  z-index: 2;
+}
+
 .sub-menu-item:nth-child(1),
 .sub-menu-item:nth-child(4),
 .sub-menu-item:nth-child(6) {
