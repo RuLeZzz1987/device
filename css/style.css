@@ -67,6 +67,7 @@ form {
   display: flex;
   align-items: flex-start;
   margin-top: 43px;
+  min-height: 51px;
   position: relative;
 }
 .site-search {
@@ -262,7 +263,6 @@ form {
   margin-top: 25px;
   padding: 0;
   display: none;
-  /*background-color: #f7e184;*/
 }
 .sub-menu a {
   display: block;
@@ -1241,7 +1241,7 @@ address::after {
   background-image: url("../img/modal-close-map.svg");
 }
 header .shop-navigation {
-  height: 186px;
+  max-height: 186px;
   margin-bottom: 40px;
 }
 .profile {
