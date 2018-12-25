@@ -334,15 +334,20 @@ input[type="radio"].visually-hidden {
 .slider-our-goods input[type="radio"] {
   display: none;
 }
+
+.slider-goods-wrapper {
+  margin-top: -128px;
+  overflow: hidden;
+}
+
+
 .slider-goods {
+  display: flex;
   overflow: hidden;
   list-style: none;
-  margin: 0;
   padding: 0;
-  margin-top: -112px;
-}
-.slide {
-  display: none;
+  width: 3480px;
+  position: relative;
 }
 
 .slider-goods li {
@@ -471,7 +476,6 @@ input[type="radio"].visually-hidden {
 .tracker {
   display: flex;
   justify-content: space-between;
-  display: none;
 }
 .tracker img {
   margin-top: 13px;
@@ -491,7 +495,6 @@ input[type="radio"].visually-hidden {
 .quadcopter {
   display: flex;
   justify-content: space-between;
-  display: none;
 }
 .quadcopter img {
   margin-top: 65px;
