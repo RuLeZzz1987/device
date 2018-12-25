@@ -252,6 +252,7 @@ form {
   margin-top: 25px;
   padding: 0;
   display: none;
+  /*background-color: #f7e184;*/
 }
 .sub-menu a {
   display: block;
@@ -328,7 +329,6 @@ input[type="radio"].visually-hidden {
 .slide {
   display: none;
 }
-
 
 .slider-goods li {
   width: 1160px;
@@ -548,7 +548,21 @@ input[type="radio"].visually-hidden {
   padding: 0;
   z-index: 2;
 }
-
+.show-more-information::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -10%;
+  width: 115%;
+  height: 8px;
+  background: #f0c52e;
+  transition: all 200ms ease;
+  z-index: -1;
+}
+.show-more-information:hover::before {
+  height: 100%;
+  top: 0;
+}
 .show-more-information:active {
   color: #c4b376;
 }
@@ -638,7 +652,28 @@ input[type="radio"].visually-hidden {
 .slider-controls-our-services label {
   font-size: 18px;
   margin-top: 40px;
+  position: relative;
 }
+.label-decoration::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  width: 60%;
+  height: 8px;
+  background: #f0c52e;
+  transition: all 300ms ease;
+  z-index: -1;
+}
+.label-decoration:hover::before {
+  height: 100%;
+  top: 0;
+}
+.label-decoration:active {
+  background-color: #000000;
+  color: #be9c22;
+}
+
 .slides-services::before {
   content: "";
   position: absolute;
@@ -1071,7 +1106,7 @@ address::after {
   margin-left: 290px;
 }
 .modal {
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1098,6 +1133,7 @@ address::after {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 95px;
+  z-index: 10;
 }
 .write-us-form::before {
   content: "";
@@ -1143,14 +1179,41 @@ address::after {
 .write-us-button {
   margin-top: 5px;
   margin-left: 34px;
+  background: none;
+  position: relative;
+  font-family: 'PT Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: none;
+  z-index: 2;
 }
-
+.write-us-button::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  width: 100%;
+  height: 8px;
+  background: #f0c52e;
+  transition: all 200ms ease;
+  z-index: -1;
+}
+.write-us-button:hover::before {
+  height: 100%;
+  top: 0;
+}
+.write-us-button:active {
+  color: #8d7536;
+}
 .modal-map {
   display: none;
-  width: 994px;
-  height: 593px;
+  width: 960px;
+  height: 559px;
   margin: 50px auto;
   /*position: relative;*/
+  box-shadow: 0 8px 20px 0px #b5b5b5;
 }
 .modal-close {
 
@@ -1455,7 +1518,7 @@ legend {
 .filter-form-button:active {
   color: #8d7536;
 }
-button::before {
+.filter-form-button::before {
   content:'';
   position: absolute;
   top: 35%;
@@ -1466,7 +1529,7 @@ button::before {
   transition: all 300ms ease;
   z-index: -1;
 }
-button:hover:before {
+.filter-form-button:hover:before {
   height: 100%;
   top: 0;
 }
@@ -1605,6 +1668,9 @@ legend {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
+.sku-name--1 {
+  width: 220px;
 }
 .sku-price {
   font-family: 'PT Gilroy', Arial, sans-serif;
