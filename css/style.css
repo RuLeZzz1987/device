@@ -369,7 +369,9 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   position: relative;
 }
-.slider-controls-our-goods label input:checked ~ span::after {
+#quadcopter:checked ~ .slider-controls-our-goods label.slider-controls-item--3::after,
+#bracelet:checked ~ .slider-controls-our-goods label.slider-controls-item--2::after,
+#selfie:checked ~ .slider-controls-our-goods label.slider-controls-item--1::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -383,6 +385,17 @@ input[type="radio"].visually-hidden {
 
   border-radius: 50%;
 }
+
+#quadcopter:checked ~ .slider-goods-wrapper > .slider-goods {
+  left: -2320px;
+}
+#selfie:checked ~ .slider-goods-wrapper > .slider-goods {
+  left: 0;
+}
+#bracelet:checked ~ .slider-goods-wrapper > .slider-goods {
+  left: -1160px;
+}
+
 /*
 #selfie:checked ~ .slider-goods .slide:nth-child(1) {
   display: block;
