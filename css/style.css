@@ -663,8 +663,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 95px;
   padding: 0;
   padding-bottom: 130px;
-  display: flex;
-  /*justify-content: space-between;*/
   position: relative;
   width: 100vw;
   left: calc(-50vw + 50%);
@@ -674,6 +672,12 @@ input[type="radio"].visually-hidden {
 .slider-our-services input[type="radio"] {
   display: none;
 }
+.slider-our-services {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .slider-controls-our-services {
   width: 280px;
   margin: 0;
@@ -683,10 +687,11 @@ input[type="radio"].visually-hidden {
 }
 .slider-controls-our-services label {
   font-size: 18px;
+  line-height: 30px;
   margin-top: 40px;
   position: relative;
 }
-.label-decoration::before {
+.label-decoration::after {
   content: "";
   position: absolute;
   top: 35%;
@@ -697,70 +702,89 @@ input[type="radio"].visually-hidden {
   transition: all 300ms ease;
   z-index: -1;
 }
-.label-decoration:hover::before {
+.label-decoration:hover::after {
   height: 100%;
   top: 0;
+}
+.label-decoration:active::after {
+  color: #be9c22;
+  background-color: #000000;
 }
 .label-decoration:active {
   background-color: #000000;
   color: #be9c22;
 }
 
+
+.slides-services {
+  width: 880px;
+  overflow: hidden;
+  margin-top: -27px;
+}
+
 .slides-services::before {
   content: "";
   position: absolute;
   top: -101px;
-  left: -3px;
+  left: 337px;
   width: 7px;
   height: 318px;
   background-color: #000000;
 }
-.slides-services {
-  position: relative;
-  margin-left: 60px;
-}
+
 .slides-list {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  width: 720px;
-  margin: 0;
+  width: 2640px;
   padding: 0;
+  margin: 0;
+}
+
+#delivery:checked ~ .slides-services .slides-list {
+  left: 0;
+}
+#warranty:checked ~ .slides-services .slides-list {
+  left: -880px;
+}
+#credit:checked ~ .slides-services .slides-list {
+  left: -1760px;
+}
+#delivery:checked ~ .slider-controls-our-services .label--1::before,
+#warranty:checked ~ .slider-controls-our-services .label--2::before,
+#credit:checked ~ .slider-controls-our-services .label--3::before {
+  content: "";
+  position: absolute;
+  left: 20%;
+  right: 50%;
+  z-index: 1;
+  width: 80%;
+  height: 100%;
+  background-color: #000000;
+  color: #8d7536;
 }
 .service-title {
   text-transform: none;
   margin: 0;
-  margin-top: -27px;
 }
 .service-description {
   text-transform: none;
   margin-top: 30px;
 }
 .slides-list img {
-  margin-top: -17px;
+  margin-top: 10px;
 }
+
+.credit,
+.warranty,
 .delivery {
   display: flex;
   width: 880px;
   margin: 0;
   padding: 0;
-  position: relative;
-  /*display: none;*/
 }
-/*label .delivery-button::before {
-  content:'';
-  position: absolute;
-  top: 35%;
-  left: -10%;
-  width: 115%;
-  height: 8px;
-  background: #f0c52e;
-  transition: all 300ms ease;
-  z-index: -1;
-}
-label .delivery-button:hover:before {
-  height: 100%;
-  top: 0;
-}*/
+
+.credit-wrapper,
+.warranty-wrapper,
 .delivery-wrapper {
   display: flex;
   flex-direction: column;
@@ -768,34 +792,7 @@ label .delivery-button:hover:before {
   margin-left: 120px;
   margin-right: 110px;
 }
-.warranty {
-  display: flex;
-  width: 880px;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-.warranty-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-  margin-left: 120px;
-  margin-right: 110px;
-}
-.credit {
-  display: flex;
-  width: 880px;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-.credit-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-  margin-left: 120px;
-  margin-right: 110px;
-}
+
 .slides-list h3,
 .about-us h2,
 .our-contacts h2 {
