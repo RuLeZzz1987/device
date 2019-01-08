@@ -655,14 +655,14 @@ input[type='radio'].visually-hidden {
 
 .slider-controls-our-services {
   width: 280px;
-  margin: -55px 0 0;
+  margin: -50px 0 0;
   padding: 0;
   position: relative;
 }
 .slider-controls-our-services label {
   font-size: 18px;
   line-height: 30px;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-right: 112px;
   position: relative;
 }
@@ -695,7 +695,8 @@ input[type='radio'].visually-hidden {
 .slides-services::before {
   content: '';
   position: absolute;
-  top: -101px;
+  top: -100px;
+  left: 337px;
   width: 7px;
   height: 318px;
   background-color: #000000;
@@ -729,12 +730,12 @@ input[type='radio'].visually-hidden {
 #credit:checked ~ .slider-controls-our-services .label--3::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   right: 50%;
   z-index: -1;
   width: 167%;
-  height: 100%;
+  height: 132%;
   background-color: #000000;
 
 }
@@ -968,13 +969,14 @@ address::after {
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
 }
 .site-footer-nav {
   padding: 0;
   display: flex;
   justify-content: space-between;
   width: 425px;
-  margin: 135px 0 0;
+  margin: 50px 0 0;
 }
 .social-networks {
   padding: 0;
@@ -1350,7 +1352,7 @@ header .shop-navigation {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 0;
-  padding: 23px 185px 23px 60px;
+  padding: 23px 179px 23px 60px;
   background-color: #dcdcdc;
 
 }
@@ -1367,14 +1369,14 @@ header .shop-navigation {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #000000;
-  padding: 23px 54px 23px 70px;
+  padding: 23px 54px 23px 76px;
   margin: 0;
 }
 .sort {
   display: flex;
   justify-content: space-between;
   width: 290px;
-  margin: 20px 0 0;
+  margin: 18px 0 0;
   padding: 0;
 }
 .sort-function {
@@ -1385,7 +1387,7 @@ header .shop-navigation {
 
   position: absolute;
   top: 30px;
-  left: 790px;
+  left: 794px;
 
   width: 11px;
   height: 10px;
@@ -1396,7 +1398,7 @@ header .shop-navigation {
 
   position: absolute;
   top: 30px;
-  left: 820px;
+  left: 824px;
 
   width: 11px;
   height: 10px;
@@ -1790,7 +1792,7 @@ legend {
   padding: 25px 33px;
   width: 125px;
   margin-left: 0;
-  margin-right: 200px;
+  margin-right: 180px;
   color: #000000;
 
 }
@@ -1798,7 +1800,7 @@ legend {
   padding: 25px 33px;
   width: 125px;
   margin-right: 0;
-  margin-left: 200px;
+  margin-left: 171px;
   color: #000000;
 }
 .pagination a {
@@ -1835,4 +1837,6 @@ legend {
   color: #acacac;
   background-color: #d9d9d9;
 }
-
+.link-footer-shop {
+  width: 140px;
+}
