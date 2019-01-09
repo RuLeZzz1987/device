@@ -47,8 +47,18 @@ a {
   height: auto;
 }
 
-section,
-form {
+.exclusive-products,
+.popular-goods,
+.shop-services,
+.brands-representation,
+.about-us,
+.our-contacts,
+.phone,
+.modal-write-us,
+.modal-map,
+.site-search,
+.write-us-form,
+.filter-form {
   display: block;
 }
 
@@ -1060,12 +1070,12 @@ input[type='radio'].visually-hidden {
   opacity: 0.3;
 }
 
-address {
+.office-adress {
   width: 215px;
   font-style: normal;
 }
 
-address::after {
+.office-adress::after {
   content: '';
   position: absolute;
   top: 175px;
@@ -1619,7 +1629,8 @@ a.exit {
 }
 
 .cost-filter-title,
-legend {
+.color,
+.bluetooth {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
