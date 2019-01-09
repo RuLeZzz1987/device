@@ -133,6 +133,7 @@ form {
 
 .search-field:focus ~ .search-form-submit {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .search-form-submit {
@@ -153,6 +154,7 @@ form {
 
 .search-form-submit:active {
   display: inline-block;
+  vertical-align: middle;
   color: #747474;
 }
 
@@ -427,6 +429,7 @@ input[type='radio'].visually-hidden {
 
 .slider-controls-our-goods label {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 17px;
   width: 10px;
   height: 10px;
@@ -693,8 +696,8 @@ input[type='radio'].visually-hidden {
   cursor: pointer;
 }
 
-.category-items:active {
-  opacity: 0.8;
+.category-image:active {
+  opacity: 0.3;
 }
 
 .category-name a {
@@ -1217,21 +1220,18 @@ address::after {
   opacity: 0.3;
 }
 
-.phone-number {
+.phone {
   padding: 0;
   margin: 0 0 60px 150px;
 }
 
-.phone-number a {
+.phone-number {
   color: #ffffff;
 }
 
-.footer-copyright {
+.copyright-htmlacademy {
   padding: 0;
   margin: 0 0 0 290px;
-}
-
-.copyright-htmlacademy {
   opacity: 1;
 }
 
@@ -1390,6 +1390,7 @@ header .shop-navigation {
 
 .profile {
   display: inline-block;
+  vertical-align: middle;
   width: 282px;
   margin-right: 0;
 }
@@ -1502,7 +1503,7 @@ a.exit {
 .sort-goods-by {
   background-color: #ebebeb;
   display: flex;
-  position: relative;
+  justify-content: space-between;
 }
 
 .sort-goods-by h2 {
@@ -1527,35 +1528,46 @@ a.exit {
 
 .sort-function {
   display: flex;
+  position: relative;
+  margin-left: 200px;
 }
 
-.sort::before {
+.ascending::before {
   content: '';
   position: absolute;
-  top: 30px;
-  left: 794px;
+  top: 15px;
+  left: 31px;
   width: 11px;
   height: 10px;
   background: url('../img/icon-up-dir.svg') no-repeat 0 0;
 }
 
-.sort::after {
+.descending::after {
   content: '';
   position: absolute;
-  top: 30px;
-  left: 824px;
+  top: 15px;
+  left: 61px;
   width: 11px;
   height: 10px;
   background: url('../img/icon-down-dir.svg') no-repeat 0 0;
 }
 
-.sort:hover::before,
-.sort:hover::after {
+.ascending::before,
+.descending::after {
+  opacity: 0.2;
+}
+
+.ascending:hover::before,
+.descending:hover::after {
   opacity: 0.4;
 }
 
-.sort:active::before,
-.sort:active::after {
+.ascending:active::before,
+.descending:active::after {
+  opacity: 1;
+}
+
+.sort-function .descending::after {
   opacity: 1;
 }
 
@@ -1626,6 +1638,7 @@ legend {
 
 .price-controls span {
   display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 24px;
   vertical-align: top;
@@ -1650,6 +1663,7 @@ legend {
   width: 60%;
   height: 2px;
   background: #91c92f;
+  cursor: pointer;
 }
 
 .range-toggle {
@@ -1665,12 +1679,14 @@ legend {
   position: absolute;
   top: 23px;
   left: -5px;
+  cursor: pointer;
 }
 
 .range-toggle-max {
   position: absolute;
   top: 23px;
   left: 105px;
+  cursor: pointer;
 }
 
 .selected-price {
@@ -1745,6 +1761,7 @@ legend {
 .available-colors label {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .filter-input-checkbox + label::before {
@@ -1786,7 +1803,8 @@ legend {
   opacity: 1;
 }
 
-.disabled-color:disabled + label {
+.disabled-color:disabled + label,
+.disabled-bluetooth:disabled + label {
   opacity: 0.3;
 }
 
@@ -1798,6 +1816,7 @@ legend {
 .available-bluetooth label {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .filter-bluetooth-input + label::before {
@@ -2136,14 +2155,14 @@ a.exit-footer {
 
 .phone-shop {
   margin-top: 34px;
-  margin-left: 48px;
+  margin-left: 100px;
 }
 
 .social-networks-shop {
   margin-left: 150px;
 }
 
-.footer-copyright-shop {
+.copyright-htmlacademy-shop {
   margin-left: 340px;
   margin-top: 62px;
 }
