@@ -116,6 +116,7 @@ a {
   height: 16px;
   background: url('../img/search.svg') no-repeat 0 0;
 }
+
 .search-field {
   background: transparent;
   border: none;
@@ -718,7 +719,7 @@ input[type='radio'].visually-hidden {
   opacity: 0.3;
 }
 
-.category-name a {
+.category-name  {
   font-family: 'PT Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1034,6 +1035,7 @@ input[type='radio'].visually-hidden {
   transition: all 300ms ease;
   z-index: -1;
 }
+
 .button-decoration:hover::before {
   height: 100%;
   top: 0;
@@ -1078,7 +1080,7 @@ input[type='radio'].visually-hidden {
   opacity: 0.3;
 }
 
-.office-adress {
+.office-address {
   width: 215px;
   font-style: normal;
 }
@@ -1227,7 +1229,7 @@ input[type='radio'].visually-hidden {
 .basket-footer:hover::before,
 .basket-footer:focus::before,
 .copyright-htmlacademy:hover,
-.copyright-htmlacademy:focus{
+.copyright-htmlacademy:focus {
   opacity: 0.6;
 }
 
@@ -1496,7 +1498,7 @@ a.exit {
   width: 100%;
   overflow: hidden;
   background: #ebebeb;
-  background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 49%,#ebebeb 50%,#ebebeb 100%);
+  background: linear-gradient(to right, #dbdbdb 0%, #dbdbdb 49%, #ebebeb 50%, #ebebeb 100%);
 }
 
 .filter-title-sort {
@@ -1588,9 +1590,11 @@ a.exit {
 .sort-function .descending::after {
   opacity: 1;
 }
+
 .sort-function a {
   font-size: 0;
 }
+
 .sort-by a {
   font-size: 14px;
   line-height: 18px;
@@ -1616,7 +1620,7 @@ a.exit {
 .filters-catalog {
   overflow: hidden;
   background: #efefef;
-  background: linear-gradient(to right,#efefef 0%,#efefef 30%,#fff 30%,#fff 100%);
+  background: linear-gradient(to right, #efefef 0%, #efefef 30%, #fff 30%, #fff 100%);
 }
 
 .filters-catalog-wrapper {
@@ -1658,7 +1662,6 @@ a.exit {
 
 .price-controls span {
   display: inline-block;
-  vertical-align: middle;
   font-size: 14px;
   line-height: 24px;
   vertical-align: top;
@@ -1735,7 +1738,7 @@ a.exit {
 }
 
 .filter-form-button::before {
-  content:'';
+  content: '';
   position: absolute;
   top: 35%;
   left: -23%;
@@ -1926,9 +1929,9 @@ legend {
   padding: 13px 9px;
   font-size: 14px;
   font-family: 'Gilroy ExtraBold', Arial, sans-serif;
-  color: rgba(0,0,0,.2);
+  color: rgba(0, 0, 0, .2);
   letter-spacing: 1px;
-  border: 2px solid rgba(0,0,0,.1);
+  border: 2px solid rgba(0, 0, 0, .1);
   border-radius: 50%;
 }
 
@@ -2106,6 +2109,7 @@ legend {
   width: 256px;
   margin-right: 0;
 }
+
 .basket-footer-shop {
   margin-left: 60px;
 }
