@@ -432,21 +432,29 @@ input[type='radio'].visually-hidden {
 
 .slider-controls-our-goods {
   position: absolute;
-  top: 542px;
-  left: 1059px;
+  top: 541px;
+  left: 1098px;
+  width: 80px;
+  height: 12px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
   z-index: 2;
 }
 
 .slider-controls-our-goods label {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 17px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   border: 1px solid #000000;
   cursor: pointer;
   position: relative;
+}
+
+.slider-controls-our-goods label:not(:last-child) {
+  margin-right: 22px;
 }
 
 #quadcopter:checked ~ .slider-controls-our-goods label.slider-controls-item--3::after,
@@ -1580,9 +1588,10 @@ a.exit {
 .sort-function .descending::after {
   opacity: 1;
 }
-
-.sort-by a,
 .sort-function a {
+  font-size: 0;
+}
+.sort-by a {
   font-size: 14px;
   line-height: 18px;
   color: #cacaca;
