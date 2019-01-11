@@ -34,7 +34,7 @@ body {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  color: #c0c0c0;
+  color: #464646;
   background-color: #ffffff;
 }
 
@@ -83,8 +83,7 @@ a {
   letter-spacing: -1px;
   color: #000000;
   padding: 0;
-  margin: 0;
-  margin-left: 57px;
+  margin: 0 0 0 57px;
 }
 
 .main-header-logo:hover {
