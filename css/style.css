@@ -1208,29 +1208,49 @@ input[type='radio'].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 .main-footer {
   background-color: #464646;
   padding-bottom: 60px;
+  display: flex;
+  width: 100%;
+  min-width: 1160px;
+  flex: 1 0 auto;
+  justify-content: center;
 }
 
-.logo-footer-address-wrapper {
-  width: 210px;
+.footer-wrapper {
+  width: 1160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  justify-content: space-between;
+}
+
+.main-footer {
+  background-color: #464646;
+  padding-bottom: 60px;
+  display: flex;
+  width: 100%;
+  min-width: 1160px;
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+.logo-footer-address-wrapper {
+  /* width: 210px; */
+  /* display: -webkit-box; */
+  display: -ms-flexbox;
+  /* display: flex; */
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
   -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 62px;
-  position: relative;
-  margin-right: 100px;
+  /* flex-direction: column; */
+  /* margin-top: 62px; */
+  /* position: relative; */
+  /* margin-right: 100px; */
 }
 
 .main-footer-logo {
@@ -1272,6 +1292,7 @@ input[type='radio'].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* flex-wrap: nowrap; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -2205,6 +2226,7 @@ legend {
 
 .stock-keeping-unit__mask .in-garbage {
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   top: 180px;
   left: 95px;
@@ -2221,6 +2243,7 @@ legend {
 
 .stock-keeping-unit__mask .add-to-compare {
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   top: 200px;
   left: 110px;
