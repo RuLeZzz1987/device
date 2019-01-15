@@ -70,11 +70,15 @@ a {
   background-color: #e5e5e5;
 }
 
-.shop-services:before,
-.shop-services:after {
+.shop-services:before {
   content: '';
   background-color: #e5e5e5;
-  width: 100%;
+  width: 100vw;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 1160px) / (-2));
+  height: 100%;
 }
 
 .main-header {
